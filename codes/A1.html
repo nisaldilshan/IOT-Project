@@ -1,0 +1,5 @@
+<button onclick="client.connect(options);">Connect</button>
+<button onclick="client.subscribe('testtopic/#', {qos: 2}); alert('Subscribed');">Subscribe</button>
+<button onclick="publish('Hello Foo !','testtopic/bar',2);">Publish</button>
+<button onclick="client.disconnect();">Disconnect</button>
+<div id="messages"></div>
